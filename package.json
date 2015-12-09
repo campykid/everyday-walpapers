@@ -1,0 +1,25 @@
+{
+  "name": "everyday-walpapers",
+  "version": "0.0.1",
+  "description": "The app that change desktop image every day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/campykid/everyday-walpapers.git"
+  },
+  "keywords": [
+    "wallpaper"
+  ],
+  "author": "Vladislav Khvostov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/campykid/everyday-walpapers/issues"
+  },
+  "homepage": "https://github.com/campykid/everyday-walpapers#readme",
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}
