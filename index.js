@@ -1,15 +1,30 @@
 var fs = require('fs'),
-    request = require('request');
+	request = require('request'),
+	path = require('path'),
+	exec = require('child_process').exec,
+	pathToImg = 'file://' + __dirname  + '/img/image.jpg',
+	child;
 
 var download = function(uri, filename, callback){
-  request.head(uri, function(err, res, body){
-    console.log('content-type:', res.headers['content-type']);
-    console.log('content-length:', res.headers['content-length']);
-
-    request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
-  });
+	request.head(uri, function(err, res, body){
+		if (err) {
+			console.log('exec error: ' + err);
+			return;
+		};
+		console.log('image download started...');
+		request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+	});
 };
 
 download('https://source.unsplash.com/random/1920x1080', 'img/image.jpg', function(){
-  console.log('done');
+	console.log('image was downloaded');
+
+	// This bash  command is changing desktop wallpaper
+	child = exec('gsettings set org.gnome.desktop.background picture-uri ' + pathToImg,
+		function (error, stdout, stderr) {
+			if (error) {
+				console.log('exec error: ' + error);
+			}
+			console.log('desktop wallpaper was changed');
+	});
 });
