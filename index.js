@@ -16,7 +16,7 @@ var download = function(uri, filename, callback){
 	});
 };
 
-download('https://source.unsplash.com/random/1920x1080', 'img/image.jpg', function(){
+download('https://source.unsplash.com/random/1920x1080', __dirname + '/img/image.jpg', function(){
 	console.log('image was downloaded');
 
 	// This bash  command is changing desktop wallpaper
@@ -24,7 +24,8 @@ download('https://source.unsplash.com/random/1920x1080', 'img/image.jpg', functi
 		function (error, stdout, stderr) {
 			if (error) {
 				console.log('exec error: ' + error);
+				return
 			}
-			console.log('desktop wallpaper was changed');
+			console.log('wallpaper will change in next session');
 	});
 });
