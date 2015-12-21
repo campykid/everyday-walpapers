@@ -5,7 +5,7 @@ Works only a ubuntu-based distro like Ubuntu, Elenetary, Mint, etc.
 
 ##### Usage
 
-Download the programm to user direcory and add execution in .bashrc file:
+Download the program into user directory and add execution in .bashrc file:
 ```
 node /home/usrname/everyday-walpapers/index.js
 ```
