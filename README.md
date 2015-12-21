@@ -1,5 +1,5 @@
-#### everyday-walpapers
-The app that change desktop image every day using [unsplash](https://unsplash.com/)
+### everyday-walpapers
+The app that change desktop image every day using [unsplash](https://unsplash.com/).
 
 Works only a ubuntu-based distro like Ubuntu, Elenetary, Mint, etc.
 
