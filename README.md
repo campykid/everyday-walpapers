@@ -1,7 +1,7 @@
 ### everyday-walpapers
 The app that change desktop image each time when you restart a computer, using [unsplash](https://unsplash.com/).
 
-Works only a ubuntu-based distro like Ubuntu, Elenetary, Mint, etc.
+Tested only a ubuntu-based distro like Ubuntu, Elenetary, Mint, etc.
 
 ##### Usage
 
