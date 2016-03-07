@@ -3,7 +3,7 @@ The app that change desktop image each time when you restart a computer, using [
 
 Tested only a ubuntu-based distro like Ubuntu, Elenetary, Mint, etc.
 
-##### Usage
+##### Install & Usage
 
 Download the program into user directory and add execution in .bashrc file:
 ```
